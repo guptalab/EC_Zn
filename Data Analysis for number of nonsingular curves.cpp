@@ -9,8 +9,8 @@ Version: 1.0
 Website: https://www.guptalab.org/ecc
 This is source code used for the analysis of conjecture : "The number of non singular 
 reduced Weierstrass elliptic curves over Z_(p^m), gcd(p^m,6)=1 is Phi(p^(2m))". Reduced 
-weierstrass Elliptic curve y^2 = x^3 + ax + b is non-singular iff discriminant discriminant 
-(Delta) is unit over Zpm, gcd(p^m,6)=1. So to find number of non-singular elliptic curves over 
+weierstrass Elliptic curve y^2 = x^3 + ax + b is non-singular iff discriminant (Delta) 
+is unit over Zpm, gcd(p^m,6)=1. So to find number of non-singular elliptic curves over 
 Z_(p^m), we need to find how many pairs of (a,b) gives discriminant as unit element
 Another way to look at this is as follows and this approach is what we have implemented:
 #ways discriminant is unit = (total curves over Z_(p^m)) - (#ways discriminant is non-unit) 
