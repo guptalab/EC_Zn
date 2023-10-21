@@ -6,7 +6,7 @@ Developers: Param Parekh, Paavan Parekh
 Graduate Mentor: Sourav Deb
 Mentor: Prof. Manish K Gupta
 Version: 1.0
-Website: https://www.guptalab.org/ecc
+visit https://www.guptalab.org/ecc for more information on results and research work
 This is source code used for Data Analysis for conjectures "The number of quadratic and cubic 
         residues along with their occurrences over Z_(p^m)". Simple bruteforce approach is 
         used to analyse the nature of both quadratic and cubic residues. Resultant data can
@@ -24,6 +24,10 @@ This is source code used for Data Analysis for conjectures "The number of quadra
 
 
 #include <bits/stdc++.h>
+#include <iostream>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
 using namespace std;
 #define ll long long int
 
@@ -81,8 +85,7 @@ int main()
     cout << "Enter p: ";
     cin >> p;
 
-    string dir = "mkdir " + to_string(p) + "_m";
-    system(dir.c_str());
+    mkdir((to_string(p) + "_m").c_str());
 
     for (mp = 1; mp <= 6; mp++)
     {
